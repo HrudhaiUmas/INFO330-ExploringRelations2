@@ -4,4 +4,4 @@ FROM tracks AS t , invoice_items AS it , invoices AS i
 WHERE it.TrackId = t.TrackId  AND it.InvoiceId = i.InvoiceId
 AND strftime('%Y', i.InvoiceDate) = '2013'
 GROUP BY t.name
-ORDER BY TotalTrackPurchases DESC
+ORDER BY TotalTrackPurchases DESC;
